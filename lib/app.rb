@@ -7,8 +7,8 @@ require('sinatra')
     erb(:index)
   end
 
-  get('/title') do
+  get('/scrabble') do
    @title = params.fetch('scrabble').scrabble()
-   erb(:title)
+   erb(:scrabble)
   end
 
